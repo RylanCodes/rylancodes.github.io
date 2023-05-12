@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/19aa2c559e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>RylanCodes Portfolio Website</title>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html" aria-label="Go to RylanCodes homepage"
+        ><img
+          src="images/Logos/RylanCodes-square-stacked-transparent-white.png"
+          alt="RylanCodes Logo"
+          width="100"
+          title="RylanCodes - Web Developer"
+      /></a>
+      <nav aria-label="primary navigation menu" class="navigation">
+        <input id="nav-toggle" type="checkbox" checked />
+        <ul class="links">
+          <li><a href="./index.html" aria-current="page">Home</a></li>
+          <li>
+            <a
+              href="#projects-section"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="projects-dropdown-menu"
+            >
+              Projects
+            </a>
+          </li>
+          <li><a href="#about-section">About</a></li>
+          <li class="contact-me">
+            <a href="#contact-section" class="contact-btn">
+              <svg
+                class="contact-animation"
+                width="150px"
+                height="60px"
+                viewBox="0 0 200 80"
+                class="border"
+              >
+                <polyline
+                  points="199,1 199,79 1,79 1,1 199,1"
+                  class="bg-line"
+                />
+                <polyline
+                  points="199,1 199,79 1,79 1,1 199,1"
+                  class="hl-line"
+                />
+              </svg>
+              <span>Contact Me</span></a
+            >
+          </li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+      </nav>
+    </header>
+
+    <section
+      class="section light-font"
+      aria-label="Hero section with Nancy L.Rodriguez's picture"
+    >
+      <div class="container">
+        <div class="image-container">
+          <picture>
+            <source
+              srcset="
+                images/Hero-placeholder-lg.jpeg 1170w,
+                images/Hero-placeholder-md.jpeg  970w,
+                images/Hero-placeholder-sm.jpeg  320w
+              "
+            />
+            <img
+              src="images/Hero-placeholder-lg.jpeg"
+              alt="Nancy L.Rodriguez's picture"
+              loading="lazy"
+            />
+          </picture>
+          <div class="heading-container">
+            <h1>NANCY L.RODRIGUEZ</h1>
+            <h2>WEB DEVELOPER</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="projects-section"
+      aria-label="Section showcasing Nancy's 3 coding projects"
+    >
+      <h3 class="section-heading">Projects</h3>
+      <ul class="auto-grid" role="list">
+        <li>
+          <a href="./les-fungi-du-quebec.html" class="project">
+            <h4 class="profile__name">The Québec Fungi Community</h4>
+            <p><span class="arrow">View Project</span></p>
+            <img
+              src="images/FungiduQuebec/ENHomePage.png"
+              alt="The Québec Fungi Community Project"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="./scarlatta-fortuna.html" class="project">
+            <h4 class="profile__name">Scarlatta Fortuna</h4>
+            <p><span class="arrow">View Project</span></p>
+            <img
+              src="images/ScarlattaFortuna/FeaturedProducts.png"
+              alt="Scarlatta Fortuna Project"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="./my-hiking-trails.html" class="project">
+            <h4 class="profile__name">My Hiking Trails</h4>
+            <p><span class="arrow">View Project</span></p>
+            <img
+              src="images/MyHikingTrailsProject.png"
+              alt="My hiking Trails Project"
+            />
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="about-section" aria-label="About Me Section">
+      <h3 class="section-heading about-section">About Me</h3>
+      <div class="languages centered">
+        <i class="fa-brands fa-html5" alt="HTML"></i>
+        <i class="fa-brands fa-css3-alt" alt="CSS"></i>
+        <i class="fa-brands fa-js" alt="Javascript"></i>
+        <i class="fa-brands fa-vuejs" alt="Vue.js"></i>
+        <i class="fa-brands fa-atlassian" alt="Atlassian"></i>
+        <i class="fa-brands fa-bitbucket" alt="Bitbucket"></i>
+        <i class="fa-brands fa-jira" alt="Jira"></i>
+        <i class="fa-brands fa-confluence" alt="Confluence"></i>
+      </div>
+      <p class="about-me">
+        I recently completed a web development course and am currently seeking a
+        5-week internship (and a job) to gain practical experience. As a
+        trilingual professional (English, French, Spanish) with a bachelor's
+        degree in business administration, I have a keen interest in front-end
+        development. I am driven by my attention to detail and enthusiasm for
+        creating enjoyable and accessible user experiences, which fuels my
+        desire to keep up with the latest trends in web development. If you're
+        looking for a passionate and dedicated developer, let's connect and
+        explore potential opportunities together.
+      </p>
+    </section>
+
+    <section
+      id="contact-section"
+      class="contact"
+      aria-label="Contact Me Section"
+    >
+      <h3 class="section-heading">Let's work together</h3>
+      <div class="social-links centered">
+        <a href="https://www.linkedin.com/in/nancylr" target="_blank"
+          ><i
+            class="fa-brands fa-linkedin"
+            alt="Nancy's LinkedIn Profile Link"
+          ></i
+        ></a>
+        <a href="https://github.com/RylanCodes" target="_blank"
+          ><i class="fa-brands fa-github" alt="Nancy's GitHub Profile Link"></i
+        ></a>
+      </div>
+      <p class="centered">
+        Get in touch with me at
+        <span class="email" onclick="copyEmailAddress()"
+          >rylancodes@gmail.com</span
+        >.
+        <span class="tooltipMessage"></span>
+      </p>
+    </section>
+    <footer>
+      <p>&copy; 2023 RylanCodes</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

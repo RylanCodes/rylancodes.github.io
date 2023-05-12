@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/19aa2c559e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>The Québec Fungi Community</title>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html" aria-label="Go to RylanCodes homepage"
+        ><img
+          src="images/Logos/RylanCodes-square-stacked-transparent-white.png"
+          alt="RylanCodes Logo"
+          width="100"
+          title="RylanCodes - Web Developer"
+      /></a>
+      <nav aria-label="primary navigation menu" class="navigation">
+        <input id="nav-toggle" type="checkbox" checked />
+        <ul class="links">
+          <li><a href="./index.html" aria-current="page">Home</a></li>
+          <li>
+            <a
+              href="/#projects-section"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="projects-dropdown-menu"
+            >
+              Projects
+            </a>
+          </li>
+          <li><a href="/#about-section">About</a></li>
+          <li class="contact-me">
+            <a href="#contact-section" class="contact-btn">
+              <svg
+                class="contact-animation"
+                width="150px"
+                height="60px"
+                viewBox="0 0 200 80"
+                class="border"
+              >
+                <polyline
+                  points="199,1 199,79 1,79 1,1 199,1"
+                  class="bg-line"
+                />
+                <polyline
+                  points="199,1 199,79 1,79 1,1 199,1"
+                  class="hl-line"
+                />
+              </svg>
+              <span>Contact Me</span></a
+            >
+          </li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+      </nav>
+    </header>
+
+    <section
+      class="project-container"
+      aria-label="section describing The Québec Fungi Community project"
+    >
+      <img
+        src="images/FungiduQuebec/ConnectEducateShare.png"
+        alt="The Québec Fungi Community's Project"
+        loading="lazy"
+      />
+      <div class="project-content">
+        <h2>The Québec Fungi Community</h2>
+        <p>
+          My final school project was creating a website for mushroom
+          enthusiasts to connect and share their love for fungi.
+        </p>
+        <ul class="stack">
+          <h5>Stack</h5>
+          <li class="stack-item">Vue.js</li>
+          <li class="stack-item">Javascript</li>
+          <li class="stack-item">HTML</li>
+          <li class="stack-item">CSS</li>
+          <li class="stack-item">MongoDB</li>
+        </ul>
+      </div>
+    </section>
+
+    <section
+      class="project-container"
+      aria-label="section describing the project purpose and goal"
+    >
+      <div class="project-content">
+        <h2>Project Purpose & Goal</h2>
+        <p>
+          The goal was to consolidate our knowledge by building a functional
+          website for a potential company. We aimed for reusable and accessible
+          code, utilized the Atlassian suite, created a wireframe on Figma, and
+          wrote tests to ensure functionality. Additionally, I challenged myself
+          to use pure CSS instead of a CSS framework.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="project-container"
+      aria-label="section describing the project challenges and thought process"
+    >
+      <div class="project-content">
+        <h2>Challenges & Thought Process</h2>
+        <p>
+          We learned Quasar but had to pivot due to unit test conflicts. Working
+          with 4 unfamiliar classmates taught us the importance of focusing on
+          strengths and effective communication. We encountered issues with
+          downloading images to the server and learned how to use AWS. We
+          conducted research to create a wireframe, established a good coding
+          structure from the start, and reused classes to save time.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="project-container"
+      aria-label="section describing the lessons learned during the project"
+    >
+      <div class="project-content">
+        <h2>Lessons Learned</h2>
+        <p>
+          This project taught me to choose my battles and the importance of
+          collaboration and communication in a team setting. I gained more
+          experience in frontend and backend development and the value of
+          writing reusable code. Overall, the project was a positive learning
+          experience that challenged me to grow as a developer.
+        </p>
+      </div>
+    </section>
+
+    <section
+      aria-label="Section with photo gallery of The Québec Fungi Community's Project"
+    >
+      <div class="gallery-container">
+        <div class="photo-grid">
+          <div class="photo-card stacked featured">
+            <img
+              src="images/FungiduQuebec/ENHomePage.png"
+              alt="Home Page"
+              class="photo-card-img"
+              loading="lazy"
+            />
+          </div>
+          <div class="photo-card stacked">
+            <img
+              src="images/FungiduQuebec/Cultivators.png"
+              alt="Cultivators Page"
+              class="photo-card-img"
+              loading="lazy"
+            />
+          </div>
+          <div class="photo-card stacked">
+            <img
+              src="images/FungiduQuebec/Events.png"
+              alt="Events Page"
+              class="photo-card-img"
+              loading="lazy"
+            />
+          </div>
+          <div class="photo-card stacked">
+            <img
+              src="images/FungiduQuebec/MyAccountSignUp.png"
+              alt="Sign Up Page"
+              class="photo-card-img"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="view-next-project"
+      aria-label="Section with button to view the next project"
+    >
+      <div class="next-project">
+        <a href="./scarlatta-fortuna.html">
+          <button class="shrink-border" type="button">View Next Project</button>
+        </a>
+      </div>
+    </section>
+
+    <section
+      id="contact-section"
+      class="contact"
+      aria-label="Contact Me Section"
+    >
+      <h3 class="section-heading">Let's work together</h3>
+      <div class="social-links centered">
+        <a href="https://www.linkedin.com/in/nancylr" target="_blank"
+          ><i
+            class="fa-brands fa-linkedin"
+            alt="Nancy's LinkedIn Profile Link"
+          ></i
+        ></a>
+        <a href="https://github.com/RylanCodes" target="_blank"
+          ><i class="fa-brands fa-github" alt="Nancy's GitHub Profile Link"></i
+        ></a>
+      </div>
+      <p class="centered">
+        Get in touch with me at
+        <span class="email" onclick="copyEmailAddress()"
+          >rylancodes@gmail.com</span
+        >.
+        <span class="tooltipMessage"></span>
+      </p>
+    </section>
+    <footer>
+      <p>&copy; 2023 RylanCodes</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

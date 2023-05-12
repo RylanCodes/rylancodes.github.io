@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/19aa2c559e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>My Hiking Trails</title>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html" aria-label="Go to RylanCodes homepage"
+        ><img
+          src="images/Logos/RylanCodes-square-stacked-transparent-white.png"
+          alt="RylanCodes Logo"
+          width="100"
+          title="RylanCodes - Web Developer"
+      /></a>
+      <nav aria-label="primary navigation menu" class="navigation">
+        <input id="nav-toggle" type="checkbox" checked />
+        <ul class="links">
+          <li><a href="./index.html" aria-current="page">Home</a></li>
+          <li>
+            <a
+              href="/#projects-section"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="projects-dropdown-menu"
+            >
+              Projects
+            </a>
+          </li>
+          <li><a href="/#about-section">About</a></li>
+          <li class="contact-me">
+            <a href="#contact-section" class="contact-btn">
+              <svg
+                class="contact-animation"
+                width="150px"
+                height="60px"
+                viewBox="0 0 200 80"
+                class="border"
+              >
+                <polyline
+                  points="199,1 199,79 1,79 1,1 199,1"
+                  class="bg-line"
+                />
+                <polyline
+                  points="199,1 199,79 1,79 1,1 199,1"
+                  class="hl-line"
+                />
+              </svg>
+              <span>Contact Me</span></a
+            >
+          </li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+      </nav>
+    </header>
+
+    <section class="project-container" aria-label="My Hiking Trails' Project">
+      <picture>
+        <source srcset="images/MyHikingTrailsProject.png" />
+        <img
+          src="images/MyHikingTrailsProject.png"
+          alt="My Hiking Trails' Project"
+          loading="lazy"
+        />
+      </picture>
+      <div class="project-content">
+        <h2>My Hiking Trails</h2>
+        <p>
+          For my first project using JavaScript, I was given the freedom to
+          choose the theme, but had to adhere to specific requirements and
+          strict corrections from my teacher.
+        </p>
+        <ul class="stack">
+          <h5>Stack</h5>
+          <li class="stack-item">HTML</li>
+          <li class="stack-item">CSS</li>
+          <li class="stack-item">Javascript</li>
+        </ul>
+        <button class="btn fun">
+          <a href="https://github.com/RylanCodes/myhikingtrails" target="_blank"
+            >View GitHub Repo</a
+          >
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="project-container"
+      aria-label="section describing the project purpose and goal"
+    >
+      <div class="project-content">
+        <h2>Project Purpose & Goal</h2>
+        <p>
+          The main goal of the project was to learn the basics of vanilla
+          JavaScript and understand how to use it in a coding project.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="project-container"
+      aria-label="section describing the project challenges and thought process"
+    >
+      <div class="project-content">
+        <h2>Challenges & Thought Process</h2>
+        <p>
+          I had to learn how to manipulate the DOM, use classes, functions,
+          methods, and constructors. During challenging learning moments, I
+          would remind myself of the quote, 'Learning to code is like learning
+          every single part of a car individually but having to teach yourself
+          how to put it together'. I watched many YouTube tutorials to help me
+          understand coding concepts.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="project-container"
+      aria-label="section describing the lessons learned during the project"
+    >
+      <div class="project-content">
+        <h2>Lessons Learned</h2>
+        <p>
+          Through building a project from scratch, I learned to focus on one
+          step at a time to avoid being overwhelmed. Breaking down the task and
+          tackling the part that I could do first helped. I also learned to not
+          hesitate to reach out to colleagues for help and ask questions to the
+          teacher.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="view-next-project"
+      aria-label="Section with button to view the next project"
+    >
+      <div class="next-project">
+        <a href="./scarlatta-fortuna.html">
+          <button class="shrink-border" type="button">View Next Project</button>
+        </a>
+      </div>
+    </section>
+
+    <section
+      id="contact-section"
+      class="contact"
+      aria-label="Contact Me Section"
+    >
+      <h3 class="section-heading">Let's work together</h3>
+      <div class="social-links centered">
+        <a href="https://www.linkedin.com/in/nancylr" target="_blank"
+          ><i
+            class="fa-brands fa-linkedin"
+            alt="Nancy's LinkedIn Profile Link"
+          ></i
+        ></a>
+        <a href="https://github.com/RylanCodes" target="_blank"
+          ><i class="fa-brands fa-github" alt="Nancy's GitHub Profile Link"></i
+        ></a>
+      </div>
+      <p class="centered">
+        Get in touch with me at
+        <span class="email" onclick="copyEmailAddress()"
+          >rylancodes@gmail.com</span
+        >.
+        <span class="tooltipMessage"></span>
+      </p>
+    </section>
+    <footer>
+      <p>&copy; 2023 RylanCodes</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
