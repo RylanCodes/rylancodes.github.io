@@ -1,6 +1,6 @@
 console.log(
   "%c👋 Hello there, thanks for checking out my website. Feel free to reach out to me!",
-  "font-size: 16px; color: #eee;"
+  "font-size: 16px; color: rgb(0, 100, 150);"
 );
 
 function copyEmailAddress() {
