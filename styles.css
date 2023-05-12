@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
 :root {
+  color-scheme: dark light;
   --dark-font: #222222;
   --light-font: #eeeeee;
 
@@ -76,7 +77,6 @@
 }
 
 html {
-  color-scheme: dark;
   scroll-behavior: smooth;
   scroll-padding-top: 3rem;
 }
@@ -86,7 +86,7 @@ html:focus-within {
 }
 
 body {
-  background-color: var(--almostBlack);
+  background: var(--almostBlack);
   min-height: 100vh;
   min-height: 100dvh;
   font-family: var(--font-family-cormorant);
