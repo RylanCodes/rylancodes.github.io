@@ -291,6 +291,8 @@ header {
 }
 
 .contact-btn {
+  width: 150px;
+  height: 60px;
   background: transparent;
   transition: 1.5s ease-in-out;
 }
@@ -300,6 +302,7 @@ header {
   left: 0;
   right: 0;
   top: 0;
+  bottom: 0;
   fill: none;
   stroke: var(--light-font);
   stroke-dasharray: 150 560;
@@ -323,14 +326,17 @@ header {
 }
 
 #nav-toggle {
-  position: absolute;
   display: none;
 }
 
 .navigation .icon-burger {
   margin-right: 1rem;
+  margin-top: 0.25rem;
   display: none;
   cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .navigation .icon-burger .line {
