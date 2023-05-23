@@ -397,6 +397,7 @@ header {
 .image-container {
   position: relative;
   overflow: hidden;
+  opacity: 0.9;
 }
 
 picture img {
@@ -408,7 +409,7 @@ picture img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 65%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -416,6 +417,20 @@ picture img {
   align-items: center;
   text-align: center;
   color: var(--light-font);
+}
+
+.heading-container h1,
+.heading-container h2 {
+  padding-left: 0.25rem;
+}
+
+.introduction {
+  font-size: clamp(0.75rem, 3vw, 2.5rem);
+  font-weight: var(--font-weight-md);
+  line-height: var(--line-height-sm);
+  letter-spacing: var(--letter-spacing-xs);
+  max-width: clamp(20ch, 95%, 30ch);
+  padding-top: 0.25rem;
 }
 
 /* projects section */
@@ -597,6 +612,11 @@ picture img {
   margin-inline: 2rem;
 }
 
+.centered {
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
 .social-links {
   font-size: 2.5rem;
 }
@@ -633,13 +653,20 @@ footer p {
 
 .project-container,
 .project-container img,
-.project-content {
+.project-content,
+.about-paragraphs,
+.gallery-container,
+.view-next-project {
   margin: 0 auto;
-  inline-size: min(100% - 1rem, 99rem);
+  inline-size: min(100% - 2rem, 95rem);
 }
 
-.project-container .project-content {
-  padding: 1.25rem;
+.project-content {
+  padding-top: 1.5rem;
+}
+
+.project-content h2 {
+  padding-bottom: 0.5rem;
 }
 
 .project-content ul h5 {
@@ -666,8 +693,6 @@ footer p {
 }
 
 .gallery-container {
-  margin: 0 auto;
-  inline-size: min(100% - 2rem, 95rem);
   padding-top: 2rem;
 }
 
@@ -678,7 +703,7 @@ footer p {
 .photo-grid {
   display: grid;
   gap: 0.25rem;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 }
 
 .photo-card {
@@ -691,10 +716,19 @@ footer p {
   object-fit: cover;
 }
 
+@media (min-width: 60em) {
+  .photo-card.featured-vertical {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+}
+
 .view-next-project {
   padding-top: 2.5rem;
-  margin: 0 auto;
-  inline-size: min(100% - 2rem, 95rem);
+}
+
+.right-end {
+  padding-left: 1rem;
 }
 
 .next-project button {
@@ -760,4 +794,30 @@ footer p {
 .next-project .shrink-border:hover::after {
   opacity: 1;
   transform: scaleX(1) scaleY(1);
+}
+
+/* about page */
+.intro-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 1rem 1rem 1rem;
+}
+
+@media (max-width: 800px) {
+  .intro-image {
+    display: block;
+  }
+  .intro-heading h1 {
+    position: relative;
+    margin: -3rem 0 0 6rem;
+    padding: 1rem 0 1rem 1rem;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.about-paragraphs p {
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
 }
