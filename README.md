@@ -1,4 +1,4 @@
-# Rylan Codes
+# RylanCodes
 ## Welcome to my portfolio website!
 
 My portfolio showcases my projects and skills as a web developer. The site is designed to be simple, user-friendly, accessible and responsive across all devices.
