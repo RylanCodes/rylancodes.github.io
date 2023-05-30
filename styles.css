@@ -206,7 +206,7 @@ a {
 }
 
 section:target > h3 {
-  text-decoration: 3px double underline;
+  text-decoration: 3px underline;
 }
 
 /* nav section */
@@ -272,11 +272,6 @@ header {
   transition-delay: 0s;
 }
 
-.navigation a:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
 .navigation ul ul li:last-of-type a {
   padding-bottom: 1.5rem;
 }
@@ -317,6 +312,24 @@ header {
 
 .contact-btn:hover svg {
   stroke-dashoffset: -560;
+}
+
+/* Underline styles */
+.underbar {
+  height: 5px;
+  width: 0;
+  bottom: 0.5rem;
+  position: absolute;
+  transition: width 0.6s ease-in-out;
+  -webkit-transition: 0.6s ease-in-out;
+  transform: translateZ(0); /* Apply hardware acceleration */
+}
+
+.navigation li a:hover ~ .underbar {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px var(--light-font);
 }
 
 /* nav hamburger menu */
@@ -391,13 +404,22 @@ header {
   .navigation :checked ~ .icon-burger .line:nth-child(3) {
     transform: translateY(-9px) rotate(-50deg);
   }
+
+  .navigation li a:hover {
+    text-shadow: 0px -2px 0px #000000, 0 0 5px rgba(255, 255, 255, 0.8),
+      0 -4px 15px rgba(255, 255, 255, 0.5);
+  }
+
+  .navigation li a:hover ~ .underbar {
+    width: 0%;
+    height: 0px;
+  }
 }
 
 /* hero section */
 .image-container {
   position: relative;
   overflow: hidden;
-  opacity: 0.9;
 }
 
 picture img {
@@ -409,7 +431,7 @@ picture img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 65%;
+  width: 53%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -417,11 +439,12 @@ picture img {
   align-items: center;
   text-align: center;
   color: var(--light-font);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 }
 
 .heading-container h1,
 .heading-container h2 {
-  padding-left: 0.25rem;
+  margin-inline: 0.5rem;
 }
 
 .introduction {
@@ -437,7 +460,6 @@ picture img {
 .section-heading {
   padding-block: 2rem;
   text-align: center;
-  text-decoration: underline;
   text-underline-offset: 8px;
 }
 
@@ -604,21 +626,16 @@ picture img {
   padding-bottom: 1rem;
 }
 
-.languages {
-  font-size: 2rem;
+.languages,
+.social-links {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-me {
   margin-inline: 2rem;
-}
-
-.centered {
-  margin: 0 auto;
-  margin-top: 1.5rem;
-}
-
-.social-links {
-  font-size: 2.5rem;
 }
 
 .contact p {
@@ -797,7 +814,7 @@ footer p {
   gap: 2rem;
   align-items: center;
   margin: 0 auto;
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1rem 1rem 1.5rem;
 }
 
 @media (max-width: 800px) {
