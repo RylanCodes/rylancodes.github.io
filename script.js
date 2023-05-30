@@ -3,6 +3,8 @@ console.log(
   "font-size: 16px; color: rgb(0, 100, 150);"
 );
 
+document.querySelector("#nav-toggle").checked = false;
+
 function copyEmailAddress() {
   const emailSpan = document.querySelector(".email");
   const emailAddress = emailSpan.textContent;
