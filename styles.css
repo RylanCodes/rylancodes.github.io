@@ -645,12 +645,6 @@ footer p {
 }
 
 /* project page */
-.project-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
 .project-container,
 .project-container img,
 .project-content,
