@@ -5,6 +5,15 @@ console.log(
 
 document.querySelector("#nav-toggle").checked = false;
 
+const navToggle = document.getElementById("nav-toggle");
+const navLinks = document.querySelectorAll(".navigation .links li a");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navToggle.checked = false;
+  });
+});
+
 function copyEmailAddress() {
   const emailSpan = document.querySelector(".email");
   const emailAddress = emailSpan.textContent;
