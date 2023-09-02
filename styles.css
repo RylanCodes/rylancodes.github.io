@@ -635,7 +635,8 @@ picture img {
 }
 
 .about-me {
-  margin-inline: 2rem;
+  inline-size: min(100% - 3rem, 95rem);
+  margin-inline: auto;
 }
 
 .contact p {
