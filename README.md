@@ -1,14 +1,28 @@
 # RylanCodes
-## Welcome to my portfolio website!
 
-My portfolio showcases my projects and skills as a web developer. The site is designed to be simple, user-friendly, accessible and responsive across all devices.
+## Portfolio Website
 
-### Technologies Used:
-- HTML
-- CSS
-- JavaScript
+Check out my portfolio website [here](https://rylancodes.github.io/).
 
-Check out a live demo of my portfolio website [here](https://rylancodes.github.io/).
+## About
 
-### Contact
-If you have any questions or comments about my portfolio website, or if you would like to collaborate with me, please feel free to contact me at rylancodes@gmail.com.
+I build custom WordPress sites using Bricks Builder and premium themes, create responsive interfaces with HTML5, CSS3, and JavaScript, optimize for SEO, and customize Shopify stores—delivering clean, accessible web experiences that achieve real business results.
+
+Currently available for freelance projects with small businesses and individuals seeking personalized web solutions.
+
+## Technologies Used
+
+* HTML5
+* CSS3
+* JavaScript
+* Sass
+* PHP
+* WordPress (Bricks Builder)
+* Git
+* Figma
+
+## Contact
+
+Interested in collaborating or have a project in mind? Let's connect!
+
+📧 **rylancodes@gmail.com**
